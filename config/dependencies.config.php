@@ -10,7 +10,7 @@ use Dashboard\Factory;
 
 return [
     'factories'          => [
-        "Application\Options\ModuleOptions"     => Factory\ModuleOptionsFactory::class,
+        "Dashboard\Options\ModuleOptions"     => Factory\ModuleOptionsFactory::class,
     ],
     'services'           => [],
     'abstract_factories' => [],
