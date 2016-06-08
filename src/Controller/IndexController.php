@@ -24,25 +24,14 @@
  * THE SOFTWARE.
  */
 
-namespace Site\Controller;
+namespace Dashboard\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-/**
- * Application\Controller\IndexController
- *
- * @package Application\Controller
- */
 class IndexController extends AbstractActionController
 {
     public function indexAction()
-    {
-        return new ViewModel($this->getEvent()->getViewModel()->getVariables());
-    }
-
-
-    public function aboutAction()
     {
         return new ViewModel($this->getEvent()->getViewModel()->getVariables());
     }
