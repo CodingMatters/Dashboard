@@ -24,20 +24,15 @@
  * THE SOFTWARE.
  */
 
-$settings = [
-    /**
-     * Application Name
-     */
-    //'application_name' => 'MyApp',
+namespace Dashboard\Controller;
 
-    /**
-     *
-     */
-    //'organization' => 'Object Coding Technologies, Inc.',
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
-    'copyright_year' => "2012",
-];
-
-return [
-    'dashboard_settings' => $settings
-];
+class PageController extends AbstractActionController
+{
+    public function indexAction()
+    {
+        return new ViewModel();
+    }
+}

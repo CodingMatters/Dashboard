@@ -15,7 +15,7 @@ return [
         'options'   => [
             'route'     => '/dashboard',
             'defaults'  => [
-                'controller'    => Controller\IndexController::class,
+                'controller'    => Controller\PageController::class,
                 'action'        => 'index'
             ]
         ]
