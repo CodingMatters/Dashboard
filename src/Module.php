@@ -26,26 +26,11 @@
 
 namespace Dashboard;
 
-use Dashboard\Options\ModuleOptions;
-use Zend\Mvc\ModuleRouteListener;
-use Zend\Mvc\MvcEvent;
+use Dashboard\ConfigProvider;
 
 class Module
 {
     private $config = [];
-
-    public function onBootstrap(MvcEvent $event)
-    {
-        $app = $event->getApplication();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($app->getEventManager());
-
-        $seviceManager = $app->getServiceManager();
-        $variables = $seviceManager->get("Dashboard\Options\ModuleOptions");
-
-        $viewModel = $event->getViewModel();
-        $viewModel->setVariables($variables->toArray());
-    }
 
     /**
      * Return default configuration for zend-mvc applications.

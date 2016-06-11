@@ -6,12 +6,8 @@
  * @see https://zendframework.github.io/zend-servicemanager/configuring-the-service-manager/
  */
 
-use Dashboard\Factory;
-
 return [
-    'factories'          => [
-        "Dashboard\Options\ModuleOptions"     => Factory\ModuleOptionsFactory::class,
-    ],
+    'factories'          => [],
     'services'           => [],
     'abstract_factories' => [],
     'delegators'         => [],
