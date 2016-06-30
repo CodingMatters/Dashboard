@@ -19,8 +19,7 @@
     "require-dev": {
         "zendframework/zend-test": "^3.0",
         "squizlabs/php_codesniffer": "^2.3",
-        "phpbench/phpbench": "^0.11",
-        "filp/whoops": "^2.0"
+        "phpbench/phpbench": "^0.11"
     },
     "autoload": {
         "psr-4": {
